@@ -1,0 +1,8 @@
+weight = 0.1
+def neural_network(input, weight):
+    prediction = input * weight
+    return prediction
+Score_goals = [2.5, 3.5, 4, 3]
+input = Score_goals[0]
+pred = neural_network(input,weight)
+print(pred)
