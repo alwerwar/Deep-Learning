@@ -1,0 +1,23 @@
+def w_sum(a,b):
+    assert(len(a) == len(b))
+    output = 0
+    for i in range(len(a)):
+        output += (a[i] * b[i])
+    return output
+weights = [0.1, 0.2, 0.6]
+
+
+def neural_network(input, weights):
+    pred = w_sum(input,weights)
+    return pred
+
+
+Score_goals = [2.5, 3.5, 4, 3]
+Passes = [0.60, 0.75, 0.70, 0.56]
+Performanse = [0.45, 0.44, 0.76, 0.55]
+
+
+
+input = [Score_goals [0], Passes [0], Performanse [0]]
+pred = neural_network(input,weights)
+print(pred)
